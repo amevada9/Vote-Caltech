@@ -10,10 +10,10 @@ def voter_image_view(request):
   
         if form.is_valid(): 
             form.save() 
-            return redirect('success') 
+            return redirect(success) 
     else: 
         form = VoterForm() 
-    return render(request, 'index.html', {'form' : form}) 
+    return render(request, 'upload_page.html', {'form' : form}) 
   
   
 def success(request): 
