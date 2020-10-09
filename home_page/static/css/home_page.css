@@ -1,11 +1,17 @@
+head {
+  color: white;
+  text-align: center;
+}
 body {
     background-color: navy;
-  }
-title {
-    color: red;
     text-align: center;
-}
-  
+
+  }
+
+  title {
+      color: white;
+      text-align: center;
+  }
   h1 {
     color: white;
     text-align: center;

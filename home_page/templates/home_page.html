@@ -3,13 +3,16 @@
 <html lang="en">
 
     <link rel="stylesheet" href="{% static 'css/home_page.css' %}">
+    <title>Vote Caltech!</title>
 
-<head>
-    <title>Welcome to Vote Caltech!</title>
+<head> 
+    <h1>Welcome to Vote Caltech</h1>
     <h2>This will be your hub for learning about voting in all the states</h2>
 </head>
 
-<content>
+
+<body>
+    
     <h3>Register to Vote!</h3>
     <a href="https://www.vote.org/register-to-vote/">Register to Vote</a>
 
@@ -21,10 +24,10 @@
     <a href="{% url 'voter_info' %}">Voter Information</a>
 
     <h3>Learn about us!!</h3>
-    <a href="{% url 'info_page' %}">Voter Information</a>
+    <a href="{% url 'info_page' %}">About us</a>
 
 
-</content>
+</body>
 
 
 </html>
