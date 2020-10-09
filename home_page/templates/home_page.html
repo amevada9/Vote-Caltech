@@ -1,13 +1,25 @@
-{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block page_content %}
-<h1>Welcome to Vote Caltech!</h1>
-<h2>This will be your hub for learning about voting in all the states</h2>
+    <link rel="stylesheet" href="{% static 'css/home_page.css' %}">
+
+<head>
+    <title>Welcome to Vote Caltech!</title>
+    <h2>This will be your hub for learning about voting in all the states</h2>
+</head>
+
+<content>
+    <h3>Register to Vote!</h3>
+    <a href="https://www.vote.org/register-to-vote/">Register to Vote</a>
 
 
-<h3>Submit your voter registration here!</h3>
-<a href="{% url 'image_upload' %}">Go to Image Upload</a>
+    <h3>Submit your voter registration here!</h3>
+    <a href="{% url 'image_upload' %}">Go to Image Upload</a>
 
-<h3>Learn about different voting rules and such here!</h3>
-<a href="{% url 'voter_info' %}">Voter Information</a>
-{% endblock %}
+    <h3>Learn about different voting rules and such here!</h3>
+    <a href="{% url 'voter_info' %}">Voter Information</a>
+</content>
+
+
+</html>
