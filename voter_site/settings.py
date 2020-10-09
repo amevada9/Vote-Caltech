@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home_page',
     'image_upload',
-    'voter_info'
+    'voter_info',
+    'info_page'
 ]
 
 MIDDLEWARE = [
