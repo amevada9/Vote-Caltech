@@ -2,32 +2,73 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <link rel="stylesheet" href="{% static 'css/home_page.css' %}">
-    <title>Vote Caltech!</title>
-
 <head> 
-    <h1>Welcome to Vote Caltech</h1>
-    <h2>This will be your hub for learning about voting in all the states</h2>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home_page.css' %}">
+    <title>Vote Caltech!</title>
 </head>
 
+<div class="heading">
+    <h1>Welcome to Vote Caltech</h1>
+    <h2>This will be your hub for learning about voting in all the states</h2>
+</div>
 
 <body>
+    <table class="info_table">
+        <tr>
+          <td>
+            <h3>Register to Vote!</h3>
+            <a href="https://www.vote.org/register-to-vote/">Register to Vote</a>
+          </td>
+          <td>
+            <h3>Submit your voter registration here!</h3>
+            <a href="www.google.com">Go to Image Upload</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3>Learn about voting in your state!</h3>
+            <a href="{% url 'voter_info' %}">Voter Information</a>
+          </td>
+          <td>
+            <h3>Learn about us!!</h3>
+            <a href="{% url 'info_page' %}">About us</a>
+          </td>
+        </tr>
+    </table>
+    <!--
+        <div class="left_option">
+        <h3>Register to Vote!</h3>
+        <a href="https://www.vote.org/register-to-vote/">Register to Vote</a>
     
-    <h3>Register to Vote!</h3>
-    <a href="https://www.vote.org/register-to-vote/">Register to Vote</a>
+        <h3>Submit your voter registration here!</h3>
+        <a href="www.google.com">Go to Image Upload</a>
+    </div>
 
-
-    <h3>Submit your voter registration here!</h3>
-    <a href="{% url 'image_upload' %}">Go to Image Upload</a>
-
-    <h3>Learn about different voting in your state here!</h3>
-    <a href="{% url 'voter_info' %}">Voter Information</a>
-
-    <h3>Learn about us!!</h3>
-    <a href="{% url 'info_page' %}">About us</a>
-
-
+    <div class= "right_option">
+        <h3>Learn about different voting in your state here!</h3>
+        <a href="{% url 'voter_info' %}">Voter Information</a>
+    
+        <h3>Learn about us!!</h3>
+        <a href="{% url 'info_page' %}">About us</a>
+    -->
+    </div>
+        
+    
 </body>
+
+<div class="bottom">
+  <h4>Website Map</h4>
+  <a href="{% url 'home_page' %}">Home</a>
+  <br>
+  <a href="https://www.vote.org/register-to-vote/">Register to Vote</a>
+  <br>
+  <a href="{% url 'voter_info' %}">Voting Info</a>
+  <br>
+  <a href="www.google.com">Submit your voter registration</a>
+  <br>
+  <a href="{% url 'info_page' %}">About us</a>
+  <br>
+</div>
 
 
 </html>

@@ -1,35 +1,33 @@
-body {
-  background-color: navy;
-}
-title {
-  color: red;
-  text-align: center;
-}
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  body {
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+  }
+  
+  .heading {
+    color: #fd6a02;
+    text-align: center;
+  }
 
-h1 {
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-h2 {
-  color: white;
-  text-align: left;
-  padding: 15px;
-}
+  .page_header {
+    background-color: white;
+    text-align: center;
+  }
+
 
 h3 {
-  color: white;
-  text-align: left;
-  padding: 15px;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-
-a {
-  color: red;
+  color:black;
   text-align: center;
-  padding: 15px;
+  margin: auto;
+  width: 50%;
+}
+
+.registration_link {
+  color: blue;
+  
 }

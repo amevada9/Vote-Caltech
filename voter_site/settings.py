@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home_page',
-    'image_upload',
     'voter_info',
     'info_page'
 ]

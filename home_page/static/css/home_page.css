@@ -1,41 +1,22 @@
-head {
-  color: white;
+* {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.heading {
+  color: black;
   text-align: center;
 }
-body {
-    background-color: navy;
-    text-align: center;
 
-  }
-
-  title {
-      color: white;
-      text-align: center;
-  }
-  h1 {
-    color: white;
-    text-align: center;
-    padding: 15px;
-  }
-  h2 {
-    color: white;
-    text-align: center;
-    padding: 15px;
-  }
-
-  h3 {
-    color: white;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
-
-  a {
-    color: red;
-    text-align: center;
-    padding: 15px;
-  }
+.info_table {
+  color: black;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}

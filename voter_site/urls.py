@@ -17,16 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings 
 from django.conf.urls.static import static 
-from image_upload.views import *
 from voter_info.views import *
 from info_page.views import *
 
 urlpatterns = [
     path('', include('home_page.urls')),
-    path('image_upload/', voter_image_view, name = 'image_upload'), 
     path('voter_info/', voter_info_view, name='voter_info'),
     path('info_page/', view_info, name='info_page'),
-    path('success', success, name = 'success'), 
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
