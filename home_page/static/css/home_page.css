@@ -28,6 +28,8 @@ div {
   padding-right: 150px; 
   padding-left: 150px; 
   width: 50%;
+  margin-left: 25%; 
+  margin-right: 25%; 
   height: 100px;
   
 }
