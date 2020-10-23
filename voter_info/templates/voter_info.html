@@ -3,12 +3,12 @@
 <html lang="en">
 
 <head>
-    <title>Voter Information Page</title>
-    <link rel="stylesheet" href="{% static 'css/voter_info.css' %}">
+    <title >Voter Information Page</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <div class="page_header">
     <h1>Voter Information Page</h1>
-    <h2>Find your state and learn how to register, vote, and ensure your ballot get counted!!</h2>
+    <h3>Find your state and learn how to register, vote, and ensure your ballot get counted!!</h3>
 </div>
 
 <body>
@@ -72,6 +72,7 @@
     
     <h3 class="state_label" change="change_state()" id="state_name"></h3>
     <a class="registration_link" id='registration_link'></a>
+    <h4 class="deadline" change="change_state()" id="registration_deadline"></h4>
  
     
     <script>
@@ -79,7 +80,7 @@
         var state_name = document.querySelector('h3');
         var link = document.getElementById('registration_link');
 
-        select.addEventListener('change',change_state);
+        select.addEventListener('change', change_state);
 
         function change_state() {
             if (select.value === "Choose") {
@@ -100,6 +101,159 @@
                     var address = link_beg.concat(split.join("-"));
                     link.setAttribute('href', address);
                 }
+            }
+            if (select.value === "Alabama") {
+                  document.getAttributeByID('registration_deadline').textContent = "October 19th, 2020";
+            } 
+            else if (select.value === 'Alaska') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 4th, 2020";
+            }
+            else if (select.value === 'Arizona') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+            }
+            else if (select.value === 'Arkansas') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+            }
+            else if (select.value === 'California') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 19th, 2020, or in-person on Nov. 3";
+            }
+            else if (select.value === 'Colorado') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 26th, 2020, or in-person on Nov. 3";
+            }
+            else if (select.value === 'Connecticut') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 27th, 2020, or in-person on Nov. 3";
+            }
+            else if (select.value === 'Delaware') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 10th, 2020";
+            }
+            else if (select.value === 'Florida') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+            }
+            else if (select.value === 'Georgia') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+            }
+            else if (select.value === 'Hawaii') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020, or in-person on Nov. 3";
+            }
+            else if (select.value === 'Idaho') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 9th, 2020, or in-person on Nov. 3";
+            }
+            else if (select.value === 'Illinois') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 6th, 2020, or in-person on Nov. 3";
+            }
+            else if (select.value === 'Indiana') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+            }
+            else if (select.value === 'Iowa') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 24th, 2020, or in-person on Nov. 3";
+            }
+            else if (select.value === 'Kansas') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020";
+            }
+            else if (select.value === 'Kentucky') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+            }
+            if (select.value === 'Louisiana') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+            }
+            if (select.value === 'Maine') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020, or in-person on Nov. 3";
+            }
+            if (select.value === 'Maryland') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020, or in-person on Nov. 3";
+            }
+            if (select.value === 'Massachusetts') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 24th, 2020";
+            }
+            if (select.value === 'Michigan') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 19th, 2020, or in-person on Nov. 3";
+            }
+            if (select.value === 'Minnesota') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020, or in-person on Nov. 3";
+            }
+            if (select.value === 'Mississippi') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+            }
+            if (select.value === 'Missouri') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 7th, 2020";
+            }
+            if (select.value === 'Montana') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 26th, 2020, or in-person on Nov. 3";
+            }
+            if (select.value === 'Nebraska') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 16th, 2020";
+            }
+            if (select.value === 'Nevada') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 6th, 2020, or in-person on Nov. 3";
+            }
+            if (select.value === 'New Hampshire') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 21th, 2020, or in-person on Nov. 3";
+            }
+            if (select.value === 'New Jersey') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020";
+            }
+            if (select.value === 'New Mexico') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 6th, 2020";
+            }
+            if (select.value === 'New York') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 9th, 2020";
+            }
+            if (select.value === 'North Carolina') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 9th, 2020";
+            }
+            if (select.value === 'North Dakota') {
+                  document.getAttributeByID('registration_deadline').textContent = "No registration needed";
+            }
+            if (select.value === 'Ohio') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+            }
+            if (select.value == 'Oklahoma') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 9th, 2020";
+            }
+            if (select.value == 'Oregon') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020";
+            }
+            if (select.value == 'Pennsylvania') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 19th, 2020";
+            }
+            if (select.value ==='Rhode Island') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 4th, 2020, or in-person on Nov. 3";
+            }
+            if (select.value === 'South Carolina') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+            }
+            if (select.value === 'South Dakota') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 19th, 2020";
+            }
+            if (select.value === 'Tennessee') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+            }
+            if (select.value === 'Texas') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+            }
+            if (select.value === 'Utah') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 23th, 2020, or in-person on Nov. 3";
+            }
+            if (select.value === 'Vermont') {
+                  document.getAttributeByID('registration_deadline').textContent = "November 3rd, 2020, or in-person on Nov. 3";
+            }
+            if (select.value === 'Virginia') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020";
+            }
+            if (select.value === 'Washington') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 26th, 2020, or in-person on Nov. 3";
+            }
+            if (select.value === 'Washington D.C.') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020, or in-person on Nov. 3";
+            }
+            if (select.value === 'West Virginia') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020";
+            }
+            if (select.value == 'Wisconsin') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 14th, 2020 online/mail-in; October 30th, 2020 in person, or in-person on Nov. 3";
+            }
+            if (select.value ==='Wyoming') {
+                  document.getAttributeByID('registration_deadline').textContent = "October 19th, 2020, or in-person on Nov. 3";
             }
         }
     </script>

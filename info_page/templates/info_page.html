@@ -2,13 +2,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link rel="stylesheet" href="{% static 'css/info_page.css' %}">
 
 <head>
     <title>Our purpose</title>
-    <h1>Voter Information Page</h1>
-    <h2>Why are we doing this?</h2>
+    <h1 style="text-align: center;">Voter Information Page</h1>
+    <h2 style="text-align: center;">Why are we doing this?</h2>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{static/info_page.css}">
 </head>
+
 
 <content>
     <p>
@@ -26,17 +28,17 @@
     </p>
 </content>
 
-<div class="bottom">
-    <h4>Website Map</h4>
-    <a href="{% url 'home_page' %}">Home</a>
+<div style="text-align: center;" class="bottom">
+    <h4  >Website Map</h4>
+    <a  href="{% url 'home_page' %}">Home</a>
     <br>
-    <a href="https://www.vote.org/register-to-vote/">Register to Vote</a>
+    <a  href="https://www.vote.org/register-to-vote/">Register to Vote</a>
     <br>
-    <a href="{% url 'voter_info' %}">Voting Info</a>
+    <a  href="{% url 'voter_info' %}">Voting Info</a>
     <br>
     <a href="www.google.com">Submit your voter registration</a>
     <br>
-    <a href="{% url 'info_page' %}">About us</a>
+    <a  href="{% url 'info_page' %}">About us</a>
     <br>
 </div>
 

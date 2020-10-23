@@ -3,20 +3,24 @@
 <html lang="en">
 
 <head> 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/home_page.css' %}">
     <title>Vote Caltech!</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home_page.css' %}"
 </head>
 
-<div class="heading">
-    <h1>Welcome to Vote Caltech</h1>
-    <h2>This will be your hub for learning about voting in all the states</h2>
+<div class="top">
+    <h1 style="text-align: center;" class="jumbotron">Welcome to Vote Caltech</h1>
+    <h4 style="text-align: center;">This will be your hub for learning about voting in all the states</h4>
 </div>
 
-<body>
-  <h3>Countdown until Election Day</h3>
-  <p class="countdown" id="demo"></p>
-  <h3>November 3, 2020</h3>
 
+
+<body>
+  <div class="countdown">
+    <h3 style="text-align: center;">Countdown until Election Day</h3> 
+    <p  style="text-align: center;" id="demo"></p>
+    <h3  style="text-align: center;">November 3, 2020</h3>
+  </div>
 <script>
   // Set the date we're counting down to
   var countDownDate = new Date("Nov 3, 2020 19:00:000").getTime();
@@ -37,75 +41,60 @@
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+    document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
+    + minutes + " minutes " + seconds + " seconds ";
 
     // If the count down is finished, write some text 
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
+      document.getElementById("demo").innerHTML = "Election Day has Passed!";
     }
   }, 1000);
 </script>
 
 
-
-    <table class="info_table">
-        <tr>
-          <td>
-            <h3>Register to Vote!</h3>
-            <a href="https://www.vote.org/register-to-vote/">Register to Vote</a>
-          </td>
-          <td>
-            <h3>Submit your voter registration here!</h3>
-            <a href="www.google.com">Go to Image Upload</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <h3>Learn about voting in your state!</h3>
-            <a href="{% url 'voter_info' %}">Voter Information</a>
-          </td>
-          <td>
-            <h3>Learn about us!!</h3>
-            <a href="{% url 'info_page' %}">About us</a>
-          </td>
-        </tr>
-    </table>
-    <!--
-        <div class="left_option">
+<table class="info_table">
+    <tr>
+      <td>
         <h3>Register to Vote!</h3>
         <a href="https://www.vote.org/register-to-vote/">Register to Vote</a>
-    
-        <h3>Submit your voter registration here!</h3>
-        <a href="www.google.com">Go to Image Upload</a>
-    </div>
-
-    <div class= "right_option">
-        <h3>Learn about different voting in your state here!</h3>
+      </td>
+      <td>
+        <h3>Submit voting registration!</h3>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhZrI2FU2DxWwAaBAdYS_DmKOWv_r9kOB3VYwgZvLz-N-L8g/viewform">Go to Submission</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Learn about voting in your state!</h3>
         <a href="{% url 'voter_info' %}">Voter Information</a>
-    
+      </td>
+      <td>
         <h3>Learn about us!!</h3>
         <a href="{% url 'info_page' %}">About us</a>
-    -->
+      </td>
+    </tr>
+</table>
     </div>
+
+    <footer  class="bottom">
+      <h4>Website Map</h4>
+      <a href="{% url 'home_page' %}">Home</a>
+      <br>
+      <a href="https://www.vote.org/register-to-vote/">Register to Vote</a>
+      <br>
+      <a href="{% url 'voter_info' %}">Voting Info</a>
+      <br>
+      <a href="www.google.com">Submit your voter registration</a>
+      <br>
+      <a href="{% url 'info_page' %}">About us</a>
+      <br>
+    </footer>
         
     
 </body>
 
-<div class="bottom">
-  <h4>Website Map</h4>
-  <a href="{% url 'home_page' %}">Home</a>
-  <br>
-  <a href="https://www.vote.org/register-to-vote/">Register to Vote</a>
-  <br>
-  <a href="{% url 'voter_info' %}">Voting Info</a>
-  <br>
-  <a href="www.google.com">Submit your voter registration</a>
-  <br>
-  <a href="{% url 'info_page' %}">About us</a>
-  <br>
-</div>
+
 
 
 </html>
