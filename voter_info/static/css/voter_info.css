@@ -1,33 +1,72 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   
+  div {
+    padding-bottom: 40px;
+  }
   body {
+    text-align: center;
+  }
+
+  .jumbotron {
+    color: white;
+    background-color: darkorange;
+    text-align: center;
+  }
+  
+  
+  .countdown {
     background-color: white;
+  
+  }
+  
+  .info_table {
+    color: black;
+    background-color: darkgray;
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    padding-right: 150px; 
+    padding-left: 150px; 
+    width: 100%;
+    height: 100px;
+    
+  }
+  
+  .bottom {
+    background-color: darkgray;
     text-align: center;
     margin: auto;
-    width: 50%;
+    width: 100%;
   }
   
-  .heading {
-    color: #fd6a02;
+  .column {
     text-align: center;
+    float: center;
+    width: 33.33%;
+    padding-top: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: auto;
+    width: 100%;
+  }
+  .filler {
+    background-color: darkgray;
   }
 
-  .page_header {
+  .filler_white {
     background-color: white;
+  }
+  
+  ul {
     text-align: center;
   }
-
-
-h3 {
-  color:black;
-  text-align: center;
-  margin: auto;
-  width: 50%;
-}
-
-.registration_link {
-  color: blue;
-  
-}

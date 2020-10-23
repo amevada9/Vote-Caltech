@@ -5,7 +5,7 @@
 <head> 
     <title>Vote Caltech!</title>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/home_page.css' %}"
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home_page.css' %}">
 </head>
 
 <div class="top">
@@ -17,9 +17,9 @@
 
 <body>
   <div class="countdown">
-    <h3 style="text-align: center;">Countdown until Election Day</h3> 
-    <p  style="text-align: center;" id="demo"></p>
-    <h3  style="text-align: center;">November 3, 2020</h3>
+    <h4 style="text-align: center;">Countdown until Election Day</h4> 
+    <h1  style="text-align: center;" id="demo" class="clock"></h1>
+    <h4 style="text-align: center;">November 3, 2020</h4>
   </div>
 <script>
   // Set the date we're counting down to
@@ -41,8 +41,8 @@
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
-    + minutes + " minutes " + seconds + " seconds ";
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
 
     // If the count down is finished, write some text 
     if (distance < 0) {
@@ -51,6 +51,11 @@
     }
   }, 1000);
 </script>
+
+<div class ="filler">
+
+</div>
+
 
 
 <table class="info_table">
@@ -75,7 +80,94 @@
       </td>
     </tr>
 </table>
-    </div>
+<div class ="filler">
+
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <h4>States Deadlines Already Passed</h4>
+    <ul style="list-style-type:none;">
+      <li>Alabama</li>
+      <li>Alaska</li>
+      <li>Arizona</li>
+      <li>Arkansas</li>
+      <li>Delaware</li>
+      <li>Florida</li>
+      <li>Georgia</li>
+      <li>Indiana</li>
+      <li>Kansas</li>
+      <li>Kentucky</li>
+      <li>Louisiana</li>
+      <li>Mississippi</li>
+      <li>Missouri</li>
+      <li>Nebraska</li>
+      <li>New Jersey/li>
+      <li>New York</li>
+      <li>New Mexico</li>
+      <li>North Carolina</li>
+      <li>Ohio</li>
+      <li>Oklahoma</li>
+      <li>Oregon</li>
+      <li>Pennsylvania</li>
+      <li>South Carolina</li>
+      <li>South Dakota</li>
+      <li>Tennessee</li>
+      <li>Texas</li>
+      <li>Virginia</li>
+      <li>West Virginia</li>
+    </ul>
+  </div>
+  
+  <div class="column">
+    <h4>States still registering voters</h4>
+    <ul style="list-style-type:none;">
+      <li>Colorado</li>
+      <li>Connecticut</li>
+      <li>Iowa</li>
+      <li>Massachusetts</li>
+      <li>Montana</li>
+      <li>North Dakota (no registration needed)</li>
+      <li>Utah</li>
+      <li>Vermont</li>
+      <li>Washington</li>
+      <li>Wisconson (register for in-person voting)</li>
+
+    </ul>
+  </div>
+  <div class="column">
+    <h4> Can register on Election Day</h4>
+    <ul style="list-style-type:none;">
+      <li>California</li>
+      <li>Colorado</li>
+      <li>Connecticut</li>
+      <li>Hawaii</li>
+      <li>Idaho</li>
+      <li>Illinois</li>
+      <li>Iowa</li>
+      <li>Maine</li>
+      <li>Maryland</li>
+      <li>Michigan</li>
+      <li>Minnesota</li>
+      <li>Montana</li>
+      <li>Nevada</li>
+      <li>New Hampshire</li>
+      <li>Rhode Island</li>
+      <li>Utah</li>
+      <li>Vermont</li>
+      <li>Washington</li>
+      <li>Washington D.C</li>
+      <li>Wisconson</li>
+      <li>Wyoming</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class ="filler">
+
+</div>
 
     <footer  class="bottom">
       <h4>Website Map</h4>

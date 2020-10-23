@@ -10,21 +10,26 @@ div {
   background-color: darkorange;
 }
 
-
 .countdown {
   background-color: white;
+
+}
+
+.clock {
+  color: darkorange;
 }
 
 .info_table {
   color: black;
-  background-color: lightgray;
+  background-color: darkgray;
   text-align: center;
-  padding-bottom: 40px;
-  padding-right: 30px; 
-  padding-left: 30px; 
-  margin: auto;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  padding-right: 150px; 
+  padding-left: 150px; 
   width: 100%;
-  height: 100px; 
+  height: 100px;
+  
 }
 
 .bottom {
@@ -32,4 +37,37 @@ div {
   text-align: center;
   margin: auto;
   width: 100%;
+}
+
+.column {
+  text-align: center;
+  float: center;
+  width: 33.33%;
+  padding-top: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: slategray;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: auto;
+  width: 100%;
+  
+}
+.filler {
+  background-color: darkgray;
+  
+}
+
+ul {
+  text-align: center;
+}
+
+p {
+  
 }

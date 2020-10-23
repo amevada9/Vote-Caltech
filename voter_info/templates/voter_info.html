@@ -5,11 +5,14 @@
 <head>
     <title >Voter Information Page</title>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/voter_info.css' %}">
 </head>
-<div class="page_header">
-    <h1>Voter Information Page</h1>
-    <h3>Find your state and learn how to register, vote, and ensure your ballot get counted!!</h3>
+<div class="top">
+    <h1 class= "jumbotron">Voter Information Page</h1>
+    <h3>Find your state and learn how to register, vote, and ensure your ballot gets counted!!</h3>
 </div>
+
+
 
 <body>
     <label for="state">Choose your state: </label>
@@ -68,17 +71,20 @@
         <option value="Wyoming">Wyoming</option>
     </select>
     
+    <div class ="filler_white">
 
+    </div>
     
-    <h3 class="state_label" change="change_state()" id="state_name"></h3>
+    <h4 class="state_label" change="change_state()" id="state_name"></h4>
     <a class="registration_link" id='registration_link'></a>
-    <h4 class="deadline" change="change_state()" id="registration_deadline"></h4>
+    <h6 class="deadline" change="change_state()" id="registration_deadline"></h6>
  
     
     <script>
         var select = document.querySelector('select');
-        var state_name = document.querySelector('h3');
+        var state_name = document.querySelector('h4');
         var link = document.getElementById('registration_link');
+        var reg_deadline = document.getElementById('registration_deadline')
 
         select.addEventListener('change', change_state);
 
@@ -103,337 +109,171 @@
                 }
             }
             if (select.value === "Alabama") {
-                  document.getAttributeByID('registration_deadline').textContent = "October 19th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 19th, 2020";
             } 
             else if (select.value === 'Alaska') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 4th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 4th, 2020";
             }
             else if (select.value === 'Arizona') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 5th, 2020";
             }
             else if (select.value === 'Arkansas') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 5th, 2020";
             }
             else if (select.value === 'California') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 19th, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 19th, 2020, or in-person on Nov. 3";
             }
             else if (select.value === 'Colorado') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 26th, 2020, or in-person on Nov. 3";
+                 reg_deadline.textContent = "Registration Deadline: October 26th, 2020, or in-person on Nov. 3";
             }
             else if (select.value === 'Connecticut') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 27th, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 27th, 2020, or in-person on Nov. 3";
             }
             else if (select.value === 'Delaware') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 10th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 10th, 2020";
             }
             else if (select.value === 'Florida') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 5th, 2020";
             }
             else if (select.value === 'Georgia') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 5th, 2020";
             }
             else if (select.value === 'Hawaii') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020, or in-person on Nov. 3";
+                 reg_deadline.textContent = "Registration Deadline: October 5th, 2020, or in-person on Nov. 3";
             }
             else if (select.value === 'Idaho') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 9th, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 9th, 2020, or in-person on Nov. 3";
             }
             else if (select.value === 'Illinois') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 6th, 2020, or in-person on Nov. 3";
+                 reg_deadline.textContent = "Registration Deadline: October 6th, 2020, or in-person on Nov. 3";
             }
             else if (select.value === 'Indiana') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 5th, 2020";
             }
             else if (select.value === 'Iowa') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 24th, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 24th, 2020, or in-person on Nov. 3";
             }
             else if (select.value === 'Kansas') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 13th, 2020";
             }
             else if (select.value === 'Kentucky') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 5th, 2020";
             }
             if (select.value === 'Louisiana') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 5th, 2020";
             }
             if (select.value === 'Maine') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 13th, 2020, or in-person on Nov. 3";
             }
             if (select.value === 'Maryland') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 13th, 2020, or in-person on Nov. 3";
             }
             if (select.value === 'Massachusetts') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 24th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 24th, 2020";
             }
             if (select.value === 'Michigan') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 19th, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 19th, 2020, or in-person on Nov. 3";
             }
             if (select.value === 'Minnesota') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020, or in-person on Nov. 3";
+                 reg_deadline.textContent = "Registration Deadline: October 13th, 2020, or in-person on Nov. 3";
             }
             if (select.value === 'Mississippi') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 5th, 2020";
             }
             if (select.value === 'Missouri') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 7th, 2020";
+                 reg_deadline.textContent = "Registration Deadline: October 7th, 2020";
             }
             if (select.value === 'Montana') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 26th, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 26th, 2020, or in-person on Nov. 3";
             }
             if (select.value === 'Nebraska') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 16th, 2020";
+                 reg_deadline.textContent = "Registration Deadline: October 16th, 2020";
             }
             if (select.value === 'Nevada') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 6th, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 6th, 2020, or in-person on Nov. 3";
             }
             if (select.value === 'New Hampshire') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 21th, 2020, or in-person on Nov. 3";
+                 reg_deadline.textContent = "Registration Deadline: October 21th, 2020, or in-person on Nov. 3";
             }
             if (select.value === 'New Jersey') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020";
+                 reg_deadline.textContent = "Registration Deadline: October 13th, 2020";
             }
             if (select.value === 'New Mexico') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 6th, 2020";
+                 reg_deadline.textContent = "Registration Deadline: October 6th, 2020";
             }
             if (select.value === 'New York') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 9th, 2020";
+                 reg_deadline.textContent = "Registration Deadline: October 9th, 2020";
             }
             if (select.value === 'North Carolina') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 9th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 9th, 2020";
             }
             if (select.value === 'North Dakota') {
-                  document.getAttributeByID('registration_deadline').textContent = "No registration needed";
+                  reg_deadline.textContent = "Registration Deadline: No registration needed";
             }
             if (select.value === 'Ohio') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+                 reg_deadline.textContent = "Registration Deadline: October 5th, 2020";
             }
             if (select.value == 'Oklahoma') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 9th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 9th, 2020";
             }
             if (select.value == 'Oregon') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 13th, 2020";
             }
             if (select.value == 'Pennsylvania') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 19th, 2020";
+                  reg_Deadline.textContent = "Registration Deadline: October 19th, 2020";
             }
             if (select.value ==='Rhode Island') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 4th, 2020, or in-person on Nov. 3";
+                  reg_Deadline.textContent = "Registration Deadline: October 4th, 2020, or in-person on Nov. 3";
             }
             if (select.value === 'South Carolina') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+                  reg_Deadline.textContent = "Registration Deadline: October 5th, 2020";
             }
             if (select.value === 'South Dakota') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 19th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 19th, 2020";
             }
             if (select.value === 'Tennessee') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 5th, 2020";
             }
             if (select.value === 'Texas') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 5th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 5th, 2020";
             }
             if (select.value === 'Utah') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 23th, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 23th, 2020, or in-person on Nov. 3";
             }
             if (select.value === 'Vermont') {
-                  document.getAttributeByID('registration_deadline').textContent = "November 3rd, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: November 3rd, 2020, or in-person on Nov. 3";
             }
             if (select.value === 'Virginia') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 13th, 2020";
             }
             if (select.value === 'Washington') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 26th, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 26th, 2020, or in-person on Nov. 3";
             }
             if (select.value === 'Washington D.C.') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 13th, 2020, or in-person on Nov. 3";
             }
             if (select.value === 'West Virginia') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 13th, 2020";
+                  reg_deadline.textContent = "Registration Deadline: October 13th, 2020";
             }
             if (select.value == 'Wisconsin') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 14th, 2020 online/mail-in; October 30th, 2020 in person, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 14th, 2020 online/mail-in; October 30th, 2020 in person, or in-person on Nov. 3";
             }
             if (select.value ==='Wyoming') {
-                  document.getAttributeByID('registration_deadline').textContent = "October 19th, 2020, or in-person on Nov. 3";
+                  reg_deadline.textContent = "Registration Deadline: October 19th, 2020, or in-person on Nov. 3";
             }
         }
     </script>
 
     
-    <!--
-<div class="state_info">
-        <h3>Alabama</h3>
+<div class ="filler_white">
 
-        <a href=https://www.vote.org/state/alabama/>Alabama Voter Information</a>
-    
-        <h3>Alaska</h3>
-    
-        <a href=https://www.vote.org/state/alaska/>Alaska Voter Information</a>
-    
-        <h3>Arizona</h3>
-    
-        <a href=https://www.vote.org/state/arizona/>Arizona Voter Information</a>
-    
-        <h3>Arkansas</h3>
-    
-        <a href=https://www.vote.org/state/arkansas/>Arkansas Voter Information</a>
-    
-        <h3> California</h3>
-    
-        <a href=https://www.vote.org/state/california/>California Voter Information</a>
-    
-        <h3>Colorado</h3>
-    
-        <a href=https://www.vote.org/state/colorado/>Colorado Voter Information</a>
-    
-        <h3>Connecticut</h3>
-    
-        <a href=https://www.vote.org/state/connecticut/>Connecticut Voter Information</a>
-    
-        <h3>Delaware</h3>
-    
-        <a href=https://www.vote.org/state/delaware/>Delaware Voter Information</a>
-    
-        <h3>Florida</h3>
-    
-        <a href=https://www.vote.org/state/florida/>Florida Voter Information</a>
-    
-        <h3> Georgia </h3>
-    
-        <a href=https://www.vote.org/state/georgia>Georgia Voter Information</a>
-    
-        <h3>Hawaii</h3>
-    
-        <a href=https://www.vote.org/state/hawaii/>Hawaii Voter Information</a>
-    
-        <h3>Idaho</h3>
-    
-        <a href=https://www.vote.org/state/idaho/>Idaho Voter Information</a>
-    
-        <h3>Illinois</h3>
-    
-        <a href=https://www.vote.org/state/illinois/>Illinois Voter Information</a>
-    
-        <h3>Indiana</h3>
-    
-        <a href=https://www.vote.org/state/indiana/>Indiana Voter Information</a>
-    
-        <h3>Idaho</h3>
-    
-        <a href=https://www.vote.org/state/iowa/>Iowa Voter Information</a>
-    
-        <h3>Kansas</h3>
-    
-        <a href=https://www.vote.org/state/kansas/>Idaho Voter Information</a>
+</div>
 
-        <h3>Kentucky</h3>
-        <a href=https://www.vote.org/state/kentucky/>Kentucky Voter Information</a>
-    
-        <h3>Louisiana</h3>
-        <a href=https://www.vote.org/state/Louisiana/>Idaho Voter Information</a>
-    
-        <h3>Maine</h3>
-        <a href=https://www.vote.org/state/maine/>Maine Voter Information</a>
-    
-        <h3>Maryland</h3>
-        <a href=https://www.vote.org/state/maryland/>Maryland Voter Information</a>
-    
-        <h3>Massachusetts</h3>
-        <a href=https://www.vote.org/state/massachusetts/>Massachusetts Voter Information</a>
-    
-        <h3>Michigan</h3>
-        <a href=https://www.vote.org/state/michigan/>Michigan Voter Information</a>
-    
-        <h3>Minnesota</h3>
-    
-        <a href=https://www.vote.org/state/minnesota/>Minnesota Voter Information</a>
-    
-        <h3>Mississippi</h3>
-        <a href=https://www.vote.org/state/mississippi/>Mississippi Voter Information</a>
-    
-        <h3>Missouri</h3>
-        <a href=https://www.vote.org/state/missouri/>Missouri Voter Information</a>
-    
-        <h3>Montana</h3>
-        <a href=https://www.vote.org/state/montana/>Montana Voter Information</a>
-    
-        <h3>Nebraska</h3>
-        <a href=https://www.vote.org/state/nebraska/>Nebraska Voter Information</a>
-    
-        <h3>Nevada</h3>
-        <a href=https://www.vote.org/state/nevada/>Nevada Voter Information</a>
-    
-        <h3>New Hampshire</h3>
-        <a href=https://www.vote.org/state/new-hampsire/>New Hampshire Voter Information</a>
-    
-        <h3>New Jersey</h3>
-        <a href=https://www.vote.org/state/new-jersey/>New Jersey Voter Information</a>
-    
-        <h3>New Mexico</h3>
-        <a href=https://www.vote.org/state/new-mexico/>New Mexico Voter Information</a>
-    
-        <h3>New York</h3>
-        <a href=https://www.vote.org/state/new-york/>New York Voter Information</a>
-    
-        <h3>North Carolina</h3>
-    
-        <a href=https://www.vote.org/state/north-carolina/>North Carolina Voter Information</a>
-    
-        <h3>North Dakota</h3>
-        <a href=https://www.vote.org/state/north-dakota/>North DakotaVoter Information</a>
-    
-        <h3>Ohio</h3>
-        <a href=https://www.vote.org/state/ohio/>Ohio Voter Information</a>
-    
-        <h3>Oklahoma</h3>
-        <a href=https://www.vote.org/state/oklahoma/>Oklahoma Voter Information</a>
-    
-        <h3>Oregon</h3>
-        <a href=https://www.vote.org/state/oregon/>Oregon Voter Information</a>
-    
-        <h3>Pennsylvania</h3>
-        <a href=https://www.vote.org/state/pennsylvania/>Pennsylvania Voter Information</a>
-    
-        <h3>Rhode Island</h3>
-        <a href=https://www.vote.org/state/rhode-island/>Rhode Island Voter Information</a>
-    
-        <h3>Sorth Carolina</h3>
-        <a href=https://www.vote.org/state/sorth-carolina/>Sorth Carolina Voter Information</a>
-    
-        <h3>South Dakota</h3>
-        <a href=https://www.vote.org/state/south-dakota/>South Dakota Voter Information</a>
-    
-        <h3>Tennessee</h3>
-        <a href=https://www.vote.org/state/tennessee/>Tennessee Voter Information</a>
+<div class ="filler">
 
-        <h3>Texas</h3>
-        <a href=https://www.vote.org/state/texas/>Texas Voter Information</a>
-    
-        <h3>Utah</h3>
-        <a href=https://www.vote.org/state/utah/>Utah Voter Information</a>
+</div>
 
-        <h3>Vermont</h3>
-        <a href=https://www.vote.org/state/vermont/>Vermont Voter Information</a>
-
-        <h3>Virginia</h3>
-        <a href=https://www.vote.org/state/virginia/>Virginia Voter Information</a>
-
-        <h3>Washington</h3>
-        <a href=https://www.vote.org/state/washington/>Washington Voter Information</a>
-
-        <h3>Washington D.C</h3>
-        <a href=https://www.vote.org/state/district-of-columbia//>Washington D.C Voter Information</a>
-
-        <h3>West Virginia</h3>
-        <a href=https://www.vote.org/state/west-virginia/>West Virginia Voter Information</a>
-    
-        <h3>Wisconsin</h3>
-        <a href=https://www.vote.org/state/wisconsin/>Wisconsin Voter Information</a>
-    
-        <h3>Wyoming</h3>
-        <a href=https://www.vote.org/state/wyoming/>Wyoming Voter Information</a>
-    </div>
-    -->
-<div class="bottom">
+<footer class="bottom">
     <h4>Website Map</h4>
     <a href="{% url 'home_page' %}">Home</a>
     <br>
@@ -445,7 +285,7 @@
     <br>
     <a href="{% url 'info_page' %}">About us</a>
     <br>
-</div>
+</footer>
   
 </body>
 </html>
