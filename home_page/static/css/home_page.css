@@ -5,6 +5,16 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 div {
   padding-bottom: 40px;
 }
+p {
+  padding: 10px;
+  border: 10px groove rgb(255, 196, 0); 
+  text-align: center;
+  width: 50%;
+  margin-left: 25%; 
+  margin-right: 25%;
+  background-color: white;
+}
+
 .jumbotron {
   color: white;
   background-color: darkorange;
