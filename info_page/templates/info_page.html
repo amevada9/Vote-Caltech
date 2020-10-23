@@ -5,41 +5,48 @@
 
 <head>
     <title>Our purpose</title>
-    <h1 style="text-align: center;">Voter Information Page</h1>
+    <h1 class="jumbotron" style="text-align: center;">Voter Information Page</h1>
     <h2 style="text-align: center;">Why are we doing this?</h2>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{static/info_page.css}">
 </head>
+<div class ="filler_white">
 
-
-<content>
-    <p>
-        In 2016, about 138 million Americans voted. While that sounds like a lot, it represents just 58.1% of the eligible voters in this country. 
-        In fact this number has been slowly decreasing for the past 40 years, in 1980, that percentage was over 80%. The smallest group that voted? People 
-        aged 18-24, college kids, new graduates, graduate students, etc.
-    </p> 
-    <img src="/media/images/Voter_Turnout_by_Sex_and_Age,_2008_US_Presidential_Election.png" alt="Voter Turnout by Age" class="center">
-    <p>  
-        Considering that it is these peoples that will be taking the brunt of many polcies
-        that come from elections, from economic policy, student loan and education policy, climate policy, healthcare, and the job market, it has never been a better
-        time for young people to vote. This website attempts to start that, in a contentious election year in which young people from all over the country 
-        can make a differnence. The resources here allow you to register to vote, request a mail in/absentee ballot, learn about early voting, and ensuring 
-        your vote is counted. 
-    </p>
-</content>
-
-<div style="text-align: center;" class="bottom">
-    <h4  >Website Map</h4>
-    <a  href="{% url 'home_page' %}">Home</a>
-    <br>
-    <a  href="https://www.vote.org/register-to-vote/">Register to Vote</a>
-    <br>
-    <a  href="{% url 'voter_info' %}">Voting Info</a>
-    <br>
-    <a href="www.google.com">Submit your voter registration</a>
-    <br>
-    <a  href="{% url 'info_page' %}">About us</a>
-    <br>
 </div>
+<body>
+    <content>
+        <p>
+            In 2016, about 138 million Americans voted. While that sounds like a lot, it represents just 58.1% of the eligible voters in this country. 
+            In fact this number has been slowly decreasing for the past 40 years, in 1980, that percentage was over 80%. The smallest group that voted? People 
+            aged 18-24, college kids, new graduates, graduate students, etc.
+        </p> 
+        <img src="/media/images/Voter_Turnout_by_Sex_and_Age,_2008_US_Presidential_Election.png" alt="Voter Turnout by Age" class="center">
+        <p>  
+            Considering that it is these peoples that will be taking the brunt of many polcies
+            that come from elections, from economic policy, student loan and education policy, climate policy, healthcare, and the job market, it has never been a better
+            time for young people to vote. This website attempts to start that, in a contentious election year in which young people from all over the country 
+            can make a differnence. The resources here allow you to register to vote, request a mail in/absentee ballot, learn about early voting, and ensuring 
+            your vote is counted. 
+        </p>
+    </content>
+    <div class ="filler_white">
+    
+    </div>
+    
+    <div style="text-align: center;" class="bottom">
+        <h4  >Website Map</h4>
+        <a  href="{% url 'home_page' %}">Home</a>
+        <br>
+        <a  href="https://www.vote.org/register-to-vote/">Register to Vote</a>
+        <br>
+        <a  href="{% url 'voter_info' %}">Voting Info</a>
+        <br>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhZrI2FU2DxWwAaBAdYS_DmKOWv_r9kOB3VYwgZvLz-N-L8g/viewform">Submit your voter registration</a>
+        <br>
+        <a  href="{% url 'info_page' %}">About us</a>
+        <br>
+    </div>
+</body>
+
 
 </html>
