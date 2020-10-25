@@ -77,7 +77,10 @@ p {
   background-color: darkgray;
 
 }
+.filler_white{
+  background-color: white;
 
+}
 ul {
   text-align: center;
 }
