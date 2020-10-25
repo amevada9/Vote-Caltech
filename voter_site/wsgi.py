@@ -12,8 +12,8 @@ import os
 import sys
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'voter_site.settings')
 sys.path.append('/opt/bitnami/vote_caltech/Voter-Caltech')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'voter_site.settings')
 os.environ.setdefault("PYTHON_EGG_CACHE", "/opt/bitnami/vote_caltech/Vote-Caltech/egg_cache")
 
 application = get_wsgi_application()
