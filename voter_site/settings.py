@@ -26,7 +26,7 @@ SECRET_KEY = '#m#lfi=*9g@eaw8-z1dr%!^rkcw_+)s743=pl2&x_t7l1&7o6h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.231.107.243', '127.0.0.1']
+ALLOWED_HOSTS = ['3.231.107.243', '127.0.0.1', 'www.votecaltech.com']
 
 
 # Application definition
